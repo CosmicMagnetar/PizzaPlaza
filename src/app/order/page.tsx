@@ -83,7 +83,7 @@ export default function OrdersPage() {
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white font-sans">
-\      <aside className="hidden md:flex flex-col w-64 bg-gray-950/70 backdrop-blur-md p-6 border-r border-gray-700">
+      <aside className="hidden md:flex flex-col w-64 bg-gray-950/70 backdrop-blur-md p-6 border-r border-gray-700">
         <h1 className="text-2xl font-bold">🍕 PizzaDash</h1>
         <nav className="flex flex-col gap-4 mt-6 flex-grow">
           <Link href="/" className="hover:text-indigo-400 transition-all">Dashboard</Link>
@@ -97,14 +97,14 @@ export default function OrdersPage() {
         </button>
       </aside>
 
-\      <header className="md:hidden flex items-center justify-between bg-gray-950/90 backdrop-blur-md p-4 border-b border-gray-700">
+      <header className="md:hidden flex items-center justify-between bg-gray-950/90 backdrop-blur-md p-4 border-b border-gray-700">
         <h1 className="text-xl font-bold">🍕 PizzaDash</h1>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
           className="text-white focus:outline-none"
         >
-\          <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
             {menuOpen ? (
               <path d="M6 18L18 6M6 6l12 12" />
             ) : (
