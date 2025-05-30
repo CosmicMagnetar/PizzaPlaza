@@ -114,7 +114,7 @@ export default function OrdersPage() {
         </button>
       </header>
 
-\      {menuOpen && (
+      {menuOpen && (
         <nav className="md:hidden bg-gray-950/90 backdrop-blur-md p-4 border-b border-gray-700 flex flex-col gap-4">
           <Link href="/" className="hover:text-indigo-400 transition-all" onClick={() => setMenuOpen(false)}>Dashboard</Link>
           <Link href="/order" className="hover:text-indigo-400 transition-all" onClick={() => setMenuOpen(false)}>Orders</Link>
@@ -130,7 +130,7 @@ export default function OrdersPage() {
         </nav>
       )}
 
-\      <main className="flex-1 p-6 md:p-10 overflow-auto">
+     <main className="flex-1 p-6 md:p-10 overflow-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
           <div className="mb-6">
             <h2 className="text-3xl font-semibold mb-1">Your Orders 📦</h2>
